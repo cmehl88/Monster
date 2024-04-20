@@ -1,7 +1,7 @@
 /**
  * Carson Mehl
  * 4/10/2024 CST388 Section 1
- * Description: The Driver class where the game happens.
+ * Description: The Driver class where the game happens!
  */
 
 import java.util.ArrayList;
