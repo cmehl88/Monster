@@ -1,12 +1,13 @@
-import java.util.function.DoubleFunction;
-
 /**
  * Carson Mehl
  * 4/19/2024 CST388 Section 1
- * Description: Melee Attack java class that implements Attack.java Interface.
+ * Description: Melee Abilities.Attack java class that implements Abilities.Attack.java Interface.
  */
 
-public class MeleeAttack implements Attack{
+package Abilities;
+import Monsters.Monster;
+
+public class MeleeAttack implements Attack {
 
     Monster attacker;
 
@@ -18,6 +19,6 @@ public class MeleeAttack implements Attack{
     public Integer attack(Monster target) {
         String message = attacker + " uses a melee attack on " + target;
         System.out.println(message);
-        return null;
+        return attacker.getStr() - target.getDef();
     }
 }

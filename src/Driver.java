@@ -4,6 +4,9 @@
  * Description: The Driver class where the game happens!
  */
 
+import Monsters.Imp;
+import Monsters.Kobold;
+import Monsters.Monster;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -19,6 +22,11 @@ public class Driver {
 
         for (Monster m : monsters){
             System.out.println(m);
+        }
+
+        while ((monsters.get(0).getHp() > 0 && (monsters.get(1).getHp() > 0 ))){
+            System.out.println(monsters.get(0).attackTarget(monsters.get(1)));
+            System.out.println(monsters.get(1).attackTarget(monsters.get(0)));
         }
     }
 }
