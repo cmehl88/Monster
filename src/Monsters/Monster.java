@@ -23,6 +23,7 @@ public abstract class Monster {
     Attack attack;
     private HashMap<String, Integer> items;
 
+    // Constructor
     public Monster(Integer maxHP, Integer xp, HashMap<String, Integer> items) {
         this.maxHP = maxHP;
         hp = this.maxHP;
@@ -41,6 +42,7 @@ public abstract class Monster {
         return rand.nextInt(max-min) + min;
     }
 
+    // The take damage that displays to console the amount of damage
     public boolean takeDamage(Integer damage){
         if (damage > 0) {
             hp = hp - damage;

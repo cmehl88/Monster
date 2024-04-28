@@ -8,7 +8,6 @@ package Abilities;
 import Monsters.Monster;
 
 public class RangedAttack implements Attack {
-
     Monster attacker;
 
     public RangedAttack(Monster attacker){
